@@ -1,0 +1,14 @@
+{
+    "ignore": [
+        "logs/*",
+        "*.log",
+        "*.json",
+        "*.md",
+        "*.txt",
+        ".gitignore"
+    ],
+    "watch": [
+        "src/"
+    ],
+    "ext": "js"
+} 

@@ -1,0 +1,38 @@
+{
+    "env": {
+        "node": true,
+        "es2022": true,
+        "mocha": true
+    },
+    "extends": [
+        "standard",
+        "plugin:n/recommended"
+    ],
+    "parserOptions": {
+        "ecmaVersion": 2022
+    },
+    "rules": {
+        "n/exports-style": ["error", "module.exports"],
+        "n/file-extension-in-import": ["error", "always"],
+        "n/prefer-global/buffer": ["error", "always"],
+        "n/prefer-global/console": ["error", "always"],
+        "n/prefer-global/process": ["error", "always"],
+        "n/no-unsupported-features/es-syntax": ["error", {
+            "version": ">=16.0.0"
+        }],
+        "no-unused-vars": ["warn", {
+            "argsIgnorePattern": "^_",
+            "varsIgnorePattern": "^_"
+        }],
+        "space-before-function-paren": ["error", {
+            "anonymous": "always",
+            "named": "never",
+            "asyncArrow": "always"
+        }],
+        "indent": ["error", 4, {
+            "SwitchCase": 1
+        }],
+        "semi": ["error", "always"],
+        "quotes": ["error", "single"]
+    }
+}
